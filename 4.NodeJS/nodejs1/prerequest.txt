@@ -1,0 +1,92 @@
+download and install following
+1. nodejs   - install 16.6 version only , from - https://nodejs.org/en/blog/release/v16.16.0
+2. git
+3. vscode
+
+create project-
+1. create project folder name
+2. run command - npm init  (to install npm with default options (npm init -y)) -> it creates package.json
+5. npm install  - this command will install in project directory all the predefine modules and user define modules that are define in package.json dependencies.   
+4. install yarn
+npm install -g yarn    (yarn use to install modules more fast.)
+
+import some other auther's project into your machine.
+    1. project must have package.json file. Ignore package-lock.json this file.
+    2. open package.json and change auther name.
+    3. from project directory run command -  npm install (this will install node modues in project directory.)
+        if error comes by saying somthing related to audit - 
+                                     error message like -
+                                                "packages are looking for funding
+                                                `npm fund` for details
+                                                high severity vulnerability"
+        To fix this run this command - npm audit fix                  
+    4. add this line -   "type": "module"   in package.json file
+       if you use "type":"module", then you can't import things like import env from './env' use insted import env from './env.js';
+    5. run command - npm start  // this will automatically restart server on each change but make sure you must have nodemon already configured.
+       or node index.mjs    // with this , on each change you need to rerun this command.
+
+Tip - 
+    1. To use import instead of require then switch your node js environment from CommonJS  Modules to ES modules. for that you need to add this line -   "type": "module"   in package.json file.
+    2. Make sure that index.js file must be placed outside the src folder parallel to node_modules.
+    3. if any module not found even if that is on correct location then use-  "npm cache clean --force" command and then do "node install" and then  "node run". 
+    4. while defining mongodb connectin ,dont use localhost for db connection in nodejs (v17.x) other wise error connect ECONNREFUSED 
+    
+install module for each project-
+1.express module
+2.body-parser
+3.mysql
+4.mongodb
+5.multer
+6.jwt-simple
+7.express-cluster
+
+
+commands-
+1.
+to start node Server-
+npm start 
+or
+node server
+
+2. INSTALL MODULES(jars) using yarn
+
+yarn add express --save       // express module to develop rest apis
+yarn add mongoose --save     // for mongo db driver utilities
+yarn add --dev @babel/core @babel/cli @babel/preset-env       // Babel is JavaScript compiler that is used to convert modern JavaScript code into a version that can be run by older web browsers.
+    also create file .babelrc manually and add entry into it. // this alows you to compile latest JavaScript code and run that on any browser version.
+
+yarn add --dev nodemon   // start your application and automatically restart it whenever you make changes to any of the files in your project.
+                        //dev means package is required only at time of development.
+    also change the value of test key in script node in package.json. change that as given below-
+     // "test": "echo \"Error: no test specified\" && exit 1"  to   "test": "nodemon ./index.js --exec babel-node"    (this means everytime on any change nodemon will trigger index.js)
+
+ yarn add body-parser --save   // use to set the mime type and also use to read post parameters in post request by express.
+ yarn add mysql --save
+ yarn add jwt-simple --save
+ yarn add mongodb --save 
+ npm install -g ts-node   // ts-node is a package that allows you to run TypeScript code directly in Node.js 
+
+ ==========================================================================================================================
+ REACT APP CREATION
+ ==========================================================================================================================
+npx create-react-app my-app   //create react app
+npm start                     //start react app
+    if you run npm install you will get 6 high severity vulnerabilities in logs.
+    You can ignore these security vulnerabilities.
+    OR ELSE you can create react project using - npx create-react-app@latest project-name
+
+npm install // to install pacakage.json
+
+To copy react app-
+    1. create new project folder name.
+    2. copy all content of other project excpet node_modules in newly created project folder
+    3. change name into package.json
+    4. npm install 
+    5. npm start
+
+
+INSTALL MODULES(jars) using yarn for react 
+
+ yarn add react-router-dom  --save |OR| npm install react-router-dom   //for routing between different web pages.
+
+

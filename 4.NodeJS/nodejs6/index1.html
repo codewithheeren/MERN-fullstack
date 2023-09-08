@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<!-- use method type post to send data in request body, for get request data send through request params -->
+<body> 
+        <form method="POST" action="http://localhost:9090/login">
+            <label for="uname">Username</label>&nbsp;&nbsp;
+            <input type="text" name="uname"><br><br>
+            <label for="pword">Password </label>&nbsp;&nbsp;
+            <input type="password" name="pword"><br><br>&nbsp;&nbsp;
+            <input type="submit" >
+        </form>
+</body>
+
+</html>
