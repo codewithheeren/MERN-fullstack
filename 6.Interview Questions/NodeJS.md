@@ -11,7 +11,7 @@
 8.	What are the differences between private and public npm package?
 
 ***Basics of NodeJS***
-1.	What is NodeJs
+1.	What is NodeJs ?
 2.	What is V8?
 3.	Explain how does Node.js work?
 4.	What is REPL in context of Node?
