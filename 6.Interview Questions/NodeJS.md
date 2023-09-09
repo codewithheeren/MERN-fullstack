@@ -1,6 +1,6 @@
 **Node JS INTERVIEW QUESTIONS**
 
--- NPM Questions
+***NPM Questions***
 1.	What is NPM?
 2.	What is global installation of dependencies?
 3.	What is package.json?
@@ -10,7 +10,7 @@
 7.	How to publish npm package in npmjs.com?
 8.	What are the differences between private and public npm package?
 
--- Basics of NodeJS
+***Basics of NodeJS***
 1.	What is NodeJs
 2.	What is V8?
 3.	Explain how does Node.js work?
