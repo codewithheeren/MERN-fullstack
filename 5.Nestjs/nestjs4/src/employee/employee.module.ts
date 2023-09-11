@@ -1,4 +1,3 @@
-import { EmployeeController } from './../../../nestjs8/src/employee/employee.controller';
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { EmployeeController } from './employee.controller';
 import { EmployeeMiddleware } from './employee.middleware';
@@ -6,7 +5,7 @@ import { EmployeeMiddleware } from './employee.middleware';
 @Module({
     imports: [],
     controllers: [
-        EmployeeController, EmployeeController],
+        EmployeeController],
     providers: [],
 })
 export class EmployeeModule implements NestModule {

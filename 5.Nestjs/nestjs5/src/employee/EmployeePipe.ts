@@ -9,6 +9,6 @@ export class EmployeePipe implements PipeTransform {
       return value ;
     else
     throw new BadRequestException("validation Failed");
-    return value.userid == 1;
+ // return value.userid == 1;
   }
 }
