@@ -52,21 +52,21 @@ JSX is a syntax extension for JavaScript that allows developers to write HTML-li
   Can browser read JSX directly?
    No, browsers cannot read JSX directly. JSX is a syntax extension for   JavaScript and needs to be transform  into regular JavaScript using a tool like Babel before it can be executed by the browser. 
 
-What is the difference between JSX and html ? 
+What is the difference between JSX and html ?   
 
-Syntax: JSX uses a syntax similar to HTML, but with some differences. For example, instead of using class to define a class, you use className in JSX. Also, JSX tags must be closed, either with a closing tag (</tag>) or with a self-closing tag (<tag />). 
+Syntax: JSX uses a syntax similar to HTML, but with some differences. For example, instead of using class to define a class, you use className in JSX. Also, JSX tags must be closed, either with a closing tag (</tag>) or with a self-closing tag (<tag />).    
 
-Attributes: In JSX, you use camelCase for attribute names instead of kebab-case in HTML. For example, you would use className instead of class, and onClick instead of onclick. 
+Attributes: In JSX, you use camelCase for attribute names instead of kebab-case in HTML. For example, you would use className instead of class, and onClick instead of onclick.     
 
-Expressions: In JSX, you can embed JavaScript expressions within curly braces {}. This allows you to dynamically render content based on variables or functions. 
+Expressions: In JSX, you can embed JavaScript expressions within curly braces {}. This allows you to dynamically render content based on variables or functions.    
 
-Components: In JSX, you can define your own custom components using JavaScript functions or classes. This allows you to reuse code and create more complex UIs.
-3. What is a component in ReactJS?
-A react application  build up with Components.
-Component in react can be a java script class or a function.
-Component is Build with logic and UI as a template.
-A component in ReactJS is a reusable piece of code that defines the structure and behavior of a user interface element. 
-Components can be composed together to create complex interfaces 
+Components: In JSX, you can define your own custom components using JavaScript functions or classes. This allows you to reuse code and create more complex UIs.      
+3. What is a component in ReactJS?    
+A react application  build up with Components.    
+Component in react can be a java script class or a function.    
+Component is Build with logic and UI as a template.    
+A component in ReactJS is a reusable piece of code that defines the structure and behavior of a user interface element.     
+Components can be composed together to create complex interfaces    
 
 5. Which version of react you have work?
     React17 
@@ -74,16 +74,16 @@ Components can be composed together to create complex interfaces
 6. Write a simple hello React program ?
 4. What is state in ReactJS and how does it differ from props?
 State in ReactJS is a built react object that contain data or information about component. Component state can change over the time , whenever state will change the component will re render.
-Props, on the other hand, are passed down from a parent component and are read-only.
-How can you update the state of a component?
-You can update the state of a component by calling the setState method provided by React. This method takes an object as an argument, which represents the new state of the component. For example, if you have a component with a state object containing a count property, you can update it like this:
-this.setState({ count: this.state.count + 1 });
-This will update the count property of the state object to the current value of count plus one. When the state is updated, React will automatically re-render the component with the new state. 
+Props, on the other hand, are passed down from a parent component and are read-only.    
+How can you update the state of a component?    
+You can update the state of a component by calling the setState method provided by React. This method takes an object as an argument, which represents the new state of the component. For example, if you have a component with a state object containing a count property, you can update it like this:    
+this.setState({ count: this.state.count + 1 });    
+This will update the count property of the state object to the current value of count plus one. When the state is updated, React will automatically re-render the component with the new state.    
 
-How to declare state ?
-To declare state in a React component, you can use the constructor method and set the initial state using this.state. Here's an example:
+How to declare state ?    
+To declare state in a React component, you can use the constructor method and set the initial state using this.state. Here's an example:    
 
-
+```java
 class Counter extends React.Component {
   constructor(props) {
     super(props);
@@ -103,7 +103,7 @@ class Counter extends React.Component {
     );
   }
 }
-
+```
 
 In this example, we have a Counter component that has an initial state of { count: 0 }. The render method displays the current value of count and a button that, when clicked, updates the state by calling this.setState({ count: this.state.count + 1 }). This will increment the value of count by 1 and trigger a re-render of the component with the updated state. 
 
