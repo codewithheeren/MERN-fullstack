@@ -46,32 +46,46 @@ Advantages of React ?
 The virtual DOM in ReactJS is a lightweight representation of the actual DOM. It allows React to quickly compare the current state of the UI with the previous state and make only necessary updates, resulting in improved performance. 
 
 
-2. What is JSX and how is it used in ReactJS?
-JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript files. It is used in ReactJS to create components with a more readable structure. 
+2. What is JSX and how is it used in ReactJS?     
+JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript files. It is used in ReactJS to create components with a more readable structure.   
+**Can browser read JSX directly?  ** 
+No, browsers cannot read JSX directly. JSX is a syntax extension for   JavaScript and needs to be transform  into regular JavaScript using a tool like Babel before it can be executed by the browser.   
 
-  Can browser read JSX directly?
-   No, browsers cannot read JSX directly. JSX is a syntax extension for   JavaScript and needs to be transform  into regular JavaScript using a tool like Babel before it can be executed by the browser. 
+**What is the difference between JSX and html ?   **    
 
-What is the difference between JSX and html ?   
+Syntax: JSX uses a syntax similar to HTML, but with some differences. For example, instead of using class to define a class, you use className in JSX. Also, JSX tags must be closed, either with a closing tag (</tag>) or with a self-closing tag (<tag />).      
 
-Syntax: JSX uses a syntax similar to HTML, but with some differences. For example, instead of using class to define a class, you use className in JSX. Also, JSX tags must be closed, either with a closing tag (</tag>) or with a self-closing tag (<tag />).    
+Attributes: In JSX, you use camelCase for attribute names instead of kebab-case in HTML. For example, you would use className instead of class, and onClick instead of onclick.      
 
-Attributes: In JSX, you use camelCase for attribute names instead of kebab-case in HTML. For example, you would use className instead of class, and onClick instead of onclick.     
+Expressions: In JSX, you can embed JavaScript expressions within curly braces {}. This allows you to dynamically render content based on variables or functions.     
 
-Expressions: In JSX, you can embed JavaScript expressions within curly braces {}. This allows you to dynamically render content based on variables or functions.    
-
-Components: In JSX, you can define your own custom components using JavaScript functions or classes. This allows you to reuse code and create more complex UIs.      
-3. What is a component in ReactJS?    
-A react application  build up with Components.    
-Component in react can be a java script class or a function.    
-Component is Build with logic and UI as a template.    
+Components: In JSX, you can define your own custom components using JavaScript functions or classes. This allows you to reuse code and create more complex UIs.       
+3. What is a component in ReactJS?     
+A react application  build up with Components.     
+Component in react can be a java script class or a function.     
+Component is Build with logic and UI as a template.     
 A component in ReactJS is a reusable piece of code that defines the structure and behavior of a user interface element.     
 Components can be composed together to create complex interfaces    
 
-5. Which version of react you have work?
-    React17 
+5. Which version of react you have work?      
+React17 
 
 6. Write a simple hello React program ?
+ ```java
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function Hello() {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+
+ReactDOM.render(<Hello />, document.getElementById('root'));
+
+   ```
 4. What is state in ReactJS and how does it differ from props?
 State in ReactJS is a built react object that contain data or information about component. Component state can change over the time , whenever state will change the component will re render.
 Props, on the other hand, are passed down from a parent component and are read-only.    
